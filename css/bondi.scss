@@ -1,0 +1,248 @@
+// Variables
+$dark-col : #19283f;
+$turqoise : #2daaac;
+$red : #ff3150;
+$yellow : #ffc400;
+$section : #eff7fa;
+// Variables
+
+//Global
+body {
+    font-family: "Roboto", sans-serif;
+}
+.rounded-pill,
+#portfolio-category .active {
+    background-color: $red;
+    color: $yellow;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    &:focus {
+        box-shadow: none;
+    }
+    &:hover {
+        color: $red;
+        background-color: $yellow;
+    }
+}
+
+.heading {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        width: 135px;
+        height: 2px;
+        background-color: $turqoise;
+        transform: translateX(-50%);
+    } 
+}
+//Global
+
+// Nav
+.navbar {
+    background-color: $dark-col;
+    .nav-link {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    &.active, &:hover ,&:focus {
+        color: $turqoise;
+        }
+    }
+    .search {
+        border-left: 1px solid $turqoise;
+        svg {
+            color: $turqoise;
+        }
+    }
+    .navbar-toggler {
+        color: white;
+        font-size: 25px;
+        border-color: white;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+// Nav
+
+// Landing
+.landing {
+    background-color: $dark-col;
+    min-height: calc(100vh - 72px) ;
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+    }
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }  
+    hr {
+        background-color: $turqoise !important;
+    }
+}
+// Landing
+
+// Features 
+
+.features {
+    .icon-holder {
+        height: 200px;
+        svg {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .num {
+        font-size: 12em;
+        z-index: -11111;
+        color: $section;
+    }
+    .icon {
+        color: $turqoise;
+    }
+    h4 {
+        color: $yellow;
+    }
+}
+// Features
+
+// portfolio
+.portfolio {
+    background-color: $section;
+    ul {
+        li {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            &:not(.active):hover {
+                color: $red;
+            }
+        }
+    }
+    .pic {
+        padding: 5px;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            content: attr(data-work);
+            position: absolute;
+            background-color: #2daaaca1;
+            color: white;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            transition: 0.3s;
+            transform: translateX(calc(-100% - 5px));
+        }
+        &:hover::before {
+            transform: translateX(0);
+        }
+    }
+    button {
+        padding: 0.5rem 1rem;
+    }
+}
+// portfolio
+
+// about
+.about {
+    .desc {
+        max-width: 500px;
+    }
+}
+// about
+
+// team
+.team {
+    background-color: $section;
+    h2 {
+        color: $yellow;
+    }
+    .card-body {
+        padding: 0;
+    }
+    h3 {
+        color: white;
+        background-color: $turqoise;
+        width: 100%;
+    }
+}
+// team
+
+// project
+.project {
+    background-color: $dark-col;
+}
+// project
+
+// newsletter
+.letter {
+    background-color: $yellow;
+    .input-container {
+        position: relative;
+        border-bottom: 2px solid white;
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            top: -20px;
+            font-size: 12px; 
+        }
+    }
+    input {
+        outline: none;
+    }
+    label {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease all;
+        pointer-events: none;
+        font-size: 20px;
+    }
+    .rounded-pill {
+        background-color: $dark-col;    
+        &:hover {
+            color: white;
+        }
+    }
+}
+// newsletter
+
+// contact
+.contact {
+    background-color: $dark-col;
+    span, li {
+        cursor: pointer;
+    }
+    .created {
+        color: $turqoise;
+    }
+    .bondi {
+        color: $yellow;
+    }
+    .text-light {
+        font-size: larger;
+    }
+
+    li:not(.text-light):not(.paragraph) {
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+    
+    .btn {
+        width: 100%;
+        a {
+            width: 100%;
+        }
+    }
+}
+// contact

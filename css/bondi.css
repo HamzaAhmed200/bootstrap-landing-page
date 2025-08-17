@@ -1,0 +1,214 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.rounded-pill,
+#portfolio-category .active {
+  background-color: #ff3150;
+  color: #ffc400;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+.rounded-pill:focus,
+#portfolio-category .active:focus {
+  box-shadow: none;
+}
+.rounded-pill:hover,
+#portfolio-category .active:hover {
+  color: #ff3150;
+  background-color: #ffc400;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 135px;
+  height: 2px;
+  background-color: #2daaac;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  background-color: #19283f;
+}
+.navbar .nav-link {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: #2daaac;
+}
+.navbar .search {
+  border-left: 1px solid #2daaac;
+}
+.navbar .search svg {
+  color: #2daaac;
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.landing {
+  background-color: #19283f;
+  min-height: calc(100vh - 72px);
+}
+.landing h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.landing p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.landing hr {
+  background-color: #2daaac !important;
+}
+
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .num {
+  font-size: 12em;
+  z-index: -11111;
+  color: #eff7fa;
+}
+.features .icon {
+  color: #2daaac;
+}
+.features h4 {
+  color: #ffc400;
+}
+
+.portfolio {
+  background-color: #eff7fa;
+}
+.portfolio ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.portfolio ul li:not(.active):hover {
+  color: #ff3150;
+}
+.portfolio .pic {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio .pic::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(45, 170, 172, 0.631372549);
+  color: white;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.portfolio .pic:hover::before {
+  transform: translateX(0);
+}
+.portfolio button {
+  padding: 0.5rem 1rem;
+}
+
+.about .desc {
+  max-width: 500px;
+}
+
+.team {
+  background-color: #eff7fa;
+}
+.team h2 {
+  color: #ffc400;
+}
+.team .card-body {
+  padding: 0;
+}
+.team h3 {
+  color: white;
+  background-color: #2daaac;
+  width: 100%;
+}
+
+.project {
+  background-color: #19283f;
+}
+
+.letter {
+  background-color: #ffc400;
+}
+.letter .input-container {
+  position: relative;
+  border-bottom: 2px solid white;
+}
+.letter .input-container input:not(:-moz-placeholder-shown) + label {
+  top: -20px;
+  font-size: 12px;
+}
+.letter .input-container input:focus + label,
+.letter .input-container input:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 12px;
+}
+.letter input {
+  outline: none;
+}
+.letter label {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  font-size: 20px;
+}
+.letter .rounded-pill {
+  background-color: #19283f;
+}
+.letter .rounded-pill:hover {
+  color: white;
+}
+
+.contact {
+  background-color: #19283f;
+}
+.contact span, .contact li {
+  cursor: pointer;
+}
+.contact .created {
+  color: #2daaac;
+}
+.contact .bondi {
+  color: #ffc400;
+}
+.contact .text-light {
+  font-size: larger;
+}
+.contact li:not(.text-light):not(.paragraph):hover {
+  color: white;
+  cursor: pointer;
+}
+.contact .btn {
+  width: 100%;
+}
+.contact .btn a {
+  width: 100%;
+}/*# sourceMappingURL=bondi.css.map */
