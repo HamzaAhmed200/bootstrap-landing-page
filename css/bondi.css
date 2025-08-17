@@ -198,6 +198,12 @@ body {
 }
 .letter .rounded-pill {
   background-color: #19283f;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .letter .rounded-pill {
+    width: 100% !important;
+  }
 }
 .letter .rounded-pill:hover {
   color: white;

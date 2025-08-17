@@ -220,7 +220,11 @@ body {
         font-size: 20px;
     }
     .rounded-pill {
-        background-color: $dark-col;    
+        background-color: $dark-col;
+        width: 50%;
+        @media (min-width: 768px) {
+            width: 100% !important;
+        }
         &:hover {
             color: white;
         }
