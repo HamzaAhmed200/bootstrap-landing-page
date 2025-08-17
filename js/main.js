@@ -1,6 +1,6 @@
 let categories = document.getElementById("portfolio-category");
 let children = Array.from(categories.children);
-let picsList = Array.from(document.querySelectorAll('#pics .pic'));
+let picsList = Array.from(document.querySelectorAll('#pics .img'));
 
 
 
