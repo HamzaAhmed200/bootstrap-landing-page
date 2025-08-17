@@ -9,6 +9,7 @@ $section : #eff7fa;
 //Global
 body {
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
 }
 .rounded-pill,
 #portfolio-category .active {
@@ -38,6 +39,13 @@ body {
         transform: translateX(-50%);
     } 
 }
+.card{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover { transform: translateY(-20px);}
+}
+
+
 //Global
 
 // Nav
@@ -65,6 +73,10 @@ body {
             box-shadow: none;
         }
     }
+    .navbar-nav {
+        text-align: right;
+    }
+    .main-btn { float: right;}
 }
 // Nav
 
@@ -117,6 +129,7 @@ body {
         li {
             padding: 0.5rem 1rem;
             cursor: pointer;
+            transition: all 0.2s ease;
             &:not(.active):hover {
                 color: $red;
             }
@@ -223,9 +236,9 @@ body {
     }
     .created {
         color: $turqoise;
-    }
-    .bondi {
-        color: $yellow;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {text-decoration: underline;}
     }
     .text-light {
         font-size: larger;

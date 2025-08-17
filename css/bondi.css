@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden !important;
 }
 
 .rounded-pill,
@@ -31,6 +32,14 @@ body {
   transform: translateX(-50%);
 }
 
+.card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-20px);
+}
+
 .navbar {
   background-color: #19283f;
 }
@@ -55,6 +64,12 @@ body {
 }
 .navbar .navbar-toggler:focus {
   box-shadow: none;
+}
+.navbar .navbar-nav {
+  text-align: right;
+}
+.navbar .main-btn {
+  float: right;
 }
 
 .landing {
@@ -98,6 +113,7 @@ body {
 .portfolio ul li {
   padding: 0.5rem 1rem;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 .portfolio ul li:not(.active):hover {
   color: #ff3150;
@@ -159,7 +175,7 @@ body {
   position: relative;
   border-bottom: 2px solid white;
 }
-.letter .input-container input:not(:-moz-placeholder-shown) + label {
+.letter .input-container input:not(:-moz-placeholder) + label {
   top: -20px;
   font-size: 12px;
 }
@@ -195,9 +211,11 @@ body {
 }
 .contact .created {
   color: #2daaac;
+  cursor: pointer;
+  text-decoration: none;
 }
-.contact .bondi {
-  color: #ffc400;
+.contact .created:hover {
+  text-decoration: underline;
 }
 .contact .text-light {
   font-size: larger;
