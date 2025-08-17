@@ -33,3 +33,23 @@ Check out the live site here:
 1. Clone the repo:
    ```bash
    git clone https://github.com/HamzaAhmed200/bootstrap-landing-page.git
+
+---
+
+✨ Features
+
+Responsive design (works on desktop & mobile)
+
+Modern UI using Bootstrap components
+
+Easy to customize and extend
+
+---
+
+👨‍💻 Author
+
+Hamza Ahmed
+
+GitHub: HamzaAhmed200
+
+LinkedIn:
