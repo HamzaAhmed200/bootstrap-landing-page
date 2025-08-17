@@ -36,7 +36,7 @@ Check out the live site here:
 
 ---
 
-✨ Features
+## ✨ Features
 
 Responsive design (works on desktop & mobile)
 
@@ -46,10 +46,10 @@ Easy to customize and extend
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Hamza Ahmed
 
-GitHub: HamzaAhmed200
+GitHub: [HamzaAhmed200](https://github.com/HamzaAhmed200)
 
-LinkedIn:
+LinkedIn:[Hamza Ahmed](https://www.linkedin.com/in/hamza-ahmed-4b9380317/)
